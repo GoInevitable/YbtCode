@@ -16,4 +16,4 @@ int main()
     }
     return 0;
 }
-//B3863 [GESP202309 一级] 买文具 https://www.luogu.com.cn/problem/B3863
+// B3863 [GESP202309 一级] 买文具 https://www.luogu.com.cn/problem/B3863
