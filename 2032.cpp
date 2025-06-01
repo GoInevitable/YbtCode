@@ -1,26 +1,30 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-void split(int n)
-{
-	for(int i = 2; i <= n; ++i)
-	{
-		if(n % i == 0)
-		{
-			cout << i;
-			if(n/i > 1)
-			{
-				cout << '*';
-				split(n/i);
-			}
-			break;
-		}
-	}
-}
 int main()
 {
-	int n;
+	int n, i = 2;
 	cin >> n;
-	cout << n << '='; 
-	split(n);
+	cout << n << '=';
+	bool flag = 1;
+	while (n > 1)
+	{
+		if (n % i == 0)
+		{
+			if (flag)
+			{
+				flag = 0;
+			}
+			else
+			{
+				cout << '*';
+			}
+			cout << i;
+			n /= i;
+		}
+		else
+		{
+			i++;
+		}
+	}
 	return 0;
 }
