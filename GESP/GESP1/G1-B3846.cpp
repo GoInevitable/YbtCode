@@ -2,15 +2,15 @@
 using namespace std;
 int main()
 {
-    int l, r, cnt = 0;
-    cin >> l >> r;
-    for (int i = l; i <= r; i++)
+    int a, b, ans = 0;
+    scanf("%d %d", &a, &b);
+    for (int i = a + 1; i < b; i++)
     {
-        if (i % 400 == 0 || (i % 4 == 0 && i % 100 != 0))
-        {                  
-            cnt = cnt + i; 
+        if (i % 4 == 0 && i % 100 != 0 || i % 400 == 0)
+        {
+            ans += i;
         }
     }
-    cout << cnt << endl;
+    printf("%d", ans);
     return 0;
 }
