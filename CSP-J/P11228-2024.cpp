@@ -1,12 +1,12 @@
 #include<iostream>
 using namespace std;
 bool mp[1010][1010];
-bool mp1[1010][1010];
+bool st[1010][1010];
 int n, m, k, x, y, d;
 int solve() {
 	int sum = 0;
 	int x1 = 0, y1 = 0;
-    mp1[x][y] = 1;
+    st[x][y] = 1;
 	for (int i = 1; i <= k; i++) {
 		if (d == 0) {
 			x1 = x;
@@ -31,7 +31,7 @@ int solve() {
 	}
 	for (int i = 1; i <= n; i++) {
 		for (int j = 1; j <= m; j++) {
-			if (mp1[i][j] == 1) {
+			if (st[i][j] == 1) {
 				sum++;
 			}
 		}
@@ -48,19 +48,19 @@ int main() {
 			for (int k = 1; k <= m; k++) {
 				scanf("%c", &temp);
 				if (temp == 'x') {
-					mp[n][m] = true;
+					mp[j][k] = true;
 				} else {
-					mp[n][m] = false;
+					mp[j][k] = false;
 				}
 			}
 		}
-		/*for (int j = 0; j <= n + 1; j++) {
-			for (int k = 0; k <= m + 1; k++) {
+		for (int j = 1; j <= n; j++) {
+			for (int k = 1; k <= m; k++) {
 				cout<<mp[j][k];
 			}
 			cout<<endl;
-		}*/
-		printf("%d", solve());
+		}
+		//printf("%d", solve());
 	}
 	return 0;
 }
