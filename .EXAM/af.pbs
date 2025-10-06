@@ -1,0 +1,94 @@
+{
+    "current_index": 0,
+    "name": "试题集2",
+    "problems": [
+        {
+            "cases": [
+                {
+                    "expected": "1\n6",
+                    "expected_output_filename": "",
+                    "input": "6 6\n1\n2\n3\n1\n2\n3",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Microsoft YaHei UI'; font-size:18px; font-weight:400; font-style:normal;\">\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>",
+            "memory_limit": 256,
+            "memory_limit_unit": 1,
+            "name": "gio",
+            "time_limit": 1,
+            "time_limit_unit": 0,
+            "url": ""
+        },
+        {
+            "answer_program": "E:/Desktop/20251004-a/stone/stone.cpp",
+            "cases": [
+                {
+                    "expected": "1\n60\n1020\n84\n2\n904841590\n672511614",
+                    "expected_output_filename": "",
+                    "input": "7\n1 1\n3 5\n5 5\n4 4\n1 2\n100000 20\n1000000000 50",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Microsoft YaHei UI'; font-size:18px; font-weight:400; font-style:normal;\">\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>",
+            "memory_limit": 256,
+            "memory_limit_unit": 1,
+            "name": "stone",
+            "time_limit": 1,
+            "time_limit_unit": 0,
+            "url": ""
+        },
+        {
+            "answer_program": "E:/Desktop/20251004-a/girl/girl.cpp",
+            "cases": [
+                {
+                    "expected": "10\n10\n9",
+                    "expected_output_filename": "",
+                    "input": "3\n2 8\n3 1\n1 4",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                },
+                {
+                    "expected": "",
+                    "expected_output_filename": "E:/Desktop/其他样例/girl2.ans",
+                    "input": "",
+                    "input_filename": "E:/Desktop/其他样例/girl2.in",
+                    "name": "试题案例2"
+                },
+                {
+                    "expected": "",
+                    "expected_output_filename": "E:/Desktop/其他样例/girl3.ans",
+                    "input": "",
+                    "input_filename": "E:/Desktop/其他样例/girl3.in",
+                    "name": "试题案例3"
+                }
+            ],
+            "description": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Microsoft YaHei UI'; font-size:18px; font-weight:400; font-style:normal;\">\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>",
+            "memory_limit": 256,
+            "memory_limit_unit": 1,
+            "name": "girl",
+            "time_limit": 1,
+            "time_limit_unit": 0,
+            "url": ""
+        },
+        {
+            "cases": [
+                {
+                    "expected": "",
+                    "expected_output_filename": "",
+                    "input": "",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Microsoft YaHei UI'; font-size:18px; font-weight:400; font-style:normal;\">\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>",
+            "memory_limit": 256,
+            "memory_limit_unit": 1,
+            "name": "试题4",
+            "time_limit": 1,
+            "time_limit_unit": 0,
+            "url": ""
+        }
+    ]
+}
