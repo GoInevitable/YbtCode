@@ -1,3 +1,5 @@
+//P11230 [CSP-J 2024] 接龙
+//https://www.luogu.com.cn/problem/P11230
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 2e5 + 10;
@@ -15,11 +17,13 @@ int main()
         for (int i = 1; i <= n; i++)
         {
             t[i].clear();
-            cin >> l[i];
+            //cin >> l[i];
+			scanf("%d",&l[i]);
             for (int j = 1; j <= l[i]; j++)
             {
                 int x;
-                cin >> x;
+                //cin >> x;
+				scanf("%d",&x);
                 t[i].push_back(x);
             }
         }
@@ -52,12 +56,13 @@ int main()
             cin >> r >> c;
             if (dp[r][c] != -1)
             {
-                cout << 1 << endl;
-                ;
+                //cout << 1 << endl;
+				printf("1\n");
             }
             else
             {
-                cout << 0 << endl;
+                //cout << 0 << endl;
+				printf("0\n");
             }
         }
     }

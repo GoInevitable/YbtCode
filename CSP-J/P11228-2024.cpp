@@ -1,3 +1,4 @@
+//错误程序
 #include<iostream>
 using namespace std;
 bool mp[1010][1010];
