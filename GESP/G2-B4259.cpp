@@ -1,3 +1,11 @@
+/**
+ * @file    
+ * @author  Jane Smith
+ * @date    2024-11-21
+ * @version 1.0
+ * @problem //https://www.luogu.com.cn/problem/B4259 B4259 [GESP202503 二级] 等差矩阵
+ * @license MIT
+ */
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -12,4 +20,4 @@ int main()
         cout << endl;
     }
     return 0;
-}//https://www.luogu.com.cn/problem/B4259 B4259 [GESP202503 二级] 等差矩阵
+}

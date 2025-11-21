@@ -1,3 +1,10 @@
+/**      
+ * @author  Jane Smith
+ * @date    2024-11-21
+ * @version 1.0
+ * @problem //https://www.luogu.com.cn/problem/B3837 B3837 [GESP202303 二级] 画三角形
+ * @license MIT
+ */
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -19,4 +26,4 @@ int main()
         printf("\n");
     }
     return 0;
-}//https://www.luogu.com.cn/problem/B3837 B3837 [GESP202303 二级] 画三角形
+}

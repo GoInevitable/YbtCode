@@ -1,3 +1,10 @@
+/**
+ * @author  Jane Smith
+ * @date    2024-11-21
+ * @version 1.0
+ * @problem https://www.luogu.com.cn/problem/B3923 B3923 [GESP202312 二级] 小杨做
+ * @license MIT
+ */
 #include <iostream>
 using namespace std;
 
@@ -27,4 +34,4 @@ int main() {
 
     cout << ans << endl;
     return 0;
-}//https://www.luogu.com.cn/problem/B3923 B3923 [GESP202312 二级] 小杨做题
+}

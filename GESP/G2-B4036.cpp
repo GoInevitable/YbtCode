@@ -1,3 +1,10 @@
+/**
+ * @author  Jane Smith
+ * @date    2024-11-21
+ * @version 1.0
+ * @problem //https://www.luogu.com.cn/problem/B4036 B4036 [GESP202409 二级] 数位之和
+ * @license MIT
+ */
 #include <bits/stdc++.h>
 using namespace std;
 int a[100001];
@@ -28,4 +35,4 @@ int main()
         }
     }
     return 0;
-}//https://www.luogu.com.cn/problem/B4036 B4036 [GESP202409 二级] 数位之和
+}

@@ -1,3 +1,10 @@
+/**
+ * @author  Jane Smith
+ * @date    2024-11-21
+ * @version 1.0
+ * @problem //https://www.luogu.com.cn/problem/B3867 B3867 [GESP202309 三级] 小杨的储蓄
+ * @license MIT
+ */
 #include <bits/stdc++.h>
 using namespace std;
 int a[1001];
@@ -15,7 +22,7 @@ int main()
         printf("%d ", a[i]);
     }
     return 0;
-}//https://www.luogu.com.cn/problem/B3867 B3867 [GESP202309 三级] 小杨的储蓄
+}
 
 
 
