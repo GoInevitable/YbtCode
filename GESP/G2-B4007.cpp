@@ -1,3 +1,10 @@
+/**
+ * @author  Jane Smith
+ * @date    2024-11-21
+ * @version 1.0
+ * @problem //https://www.luogu.com.cn/problem/B4007 B4007 [GESP202406 二级] 计数
+ * @license MIT
+ */
 #include<iostream>
 using namespace std;
 int main() {
@@ -15,4 +22,3 @@ int main() {
 	cout<<ans;
 	return 0;
 }
-//https://www.luogu.com.cn/problem/B4007 B4007 [GESP202406 二级] 计数

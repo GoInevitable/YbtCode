@@ -1,3 +1,12 @@
+/**
+ * @author  Jane Smith
+ * @date    2024-11-21
+ * @version 1.0
+ * @problem B3841 [GESP202306 二级] 自幂数判断
+            https://www.luogu.com.cn/problem/B3841
+            http://ybt.ssoier.cn:8088/problem_show.php?pid=4008
+ * @license MIT
+ */
 #include <iostream>
 using namespace std;
 

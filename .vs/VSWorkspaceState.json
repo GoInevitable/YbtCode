@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.Day2",
-    "\\.Day2\\put",
-    "\\.Day2\\red"
+    "\\Character type and character array"
   ],
-  "SelectedNode": "\\.Day2\\put\\put.cpp",
+  "SelectedNode": "\\Character type and character array\\1139.cpp",
   "PreviewInSolutionExplorer": false
 }

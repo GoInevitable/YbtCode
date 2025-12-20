@@ -1,3 +1,10 @@
+/**  
+ * @author  Jane Smith
+ * @date    2024-11-21
+ * @version 1.0
+ * @problem //https://www.luogu.com.cn/problem/B3924 B3924 [GESP202312 二级] 小杨的H字矩阵
+ * @license MIT
+ */
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
@@ -16,4 +23,4 @@ int main(){
         printf("\n");
     }
     return 0;
-}//https://www.luogu.com.cn/problem/B3924 B3924 [GESP202312 二级] 小杨的H字矩阵
+}

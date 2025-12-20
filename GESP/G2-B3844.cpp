@@ -1,3 +1,10 @@
+/**
+ * @author  Jane Smith
+ * @date    2024-11-21
+ * @version 1.0
+ * @problem https://www.luogu.com.cn/problem/B3844 B3844 [GESP样题 二级] 画正方形
+ * @license MIT
+ */
 #include <bits/stdc++.h>
 using namespace std;
 int main()

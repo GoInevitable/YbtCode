@@ -1,3 +1,10 @@
+/**
+ * @author  Jane Smith
+ * @date    2024-11-21
+ * @version 1.0
+ * @problem https://www.luogu.com.cn/problem/B4065 B4065 [GESP202412 二级] 数位和
+ * @license MIT
+ */
 #include <iostream>
 using namespace std;
 
@@ -21,4 +28,4 @@ int main() {
     
     cout << sum << endl;
     return 0;
-}//https://www.luogu.com.cn/problem/B4065 B4065 [GESP202412 二级] 数位和
+}

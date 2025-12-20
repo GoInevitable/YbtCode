@@ -1,3 +1,11 @@
+/**
+ * @file    
+ * @author  Jane Smith
+ * @date    2024-11-21
+ * @version 1.0
+ * @problem //https://www.luogu.com.cn/problem/B3866 B3866 [GESP202309 二级] 数字黑洞
+ * @license MIT
+ */
 #include <iostream>
 #include <algorithm>
 using namespace std;
@@ -23,4 +31,4 @@ int main() {
 
     cout << cnt << endl;
     return 0;
-}//https://www.luogu.com.cn/problem/B3866 B3866 [GESP202309 二级] 数字黑洞
+}

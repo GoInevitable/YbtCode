@@ -1,3 +1,10 @@
+/**
+ * @author  Jane Smith
+ * @date    2024-11-21
+ * @version 1.0
+ * @problem https://www.luogu.com.cn/problem/B3841 B3841 [GESP202306 二级] 自幂数判断
+ * @license MIT
+ */
 #include <cstdio>
 
 int main() {

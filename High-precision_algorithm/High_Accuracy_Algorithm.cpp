@@ -1,3 +1,12 @@
+/** 
+ * @author  Jane Smith
+ * @file    High_Accuracy_Algorithm.cpp
+ * @date    2025-12-星期六
+ * @version 1.0
+ * @problem NONE
+ * USING AI
+ * @license MIT
+ */
 #include <bits/stdc++.h>
 using namespace std; 
 // 函数名称:add

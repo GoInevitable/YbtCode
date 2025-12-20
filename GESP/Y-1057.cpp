@@ -1,3 +1,10 @@
+/** 
+ * @author  Jane Smith
+ * @date    2024-11-21
+ * @version 1.0
+ * @problem NONE
+ * @license MIT
+ */
 #include <iostream>
 using namespace std;
 int main() {
