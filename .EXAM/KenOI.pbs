@@ -1,0 +1,78 @@
+{
+    "current_index": 3,
+    "name": "试题集2",
+    "problems": [
+        {
+            "cases": [
+                {
+                    "expected": "1\n2\n3\n",
+                    "expected_output_filename": "",
+                    "input": "3\n9\n50\n100\n",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "",
+            "memory_limit": 512,
+            "memory_limit_unit": 1,
+            "name": "T625027 [KenOI 2025] 倍数题",
+            "time_limit": 1000,
+            "time_limit_unit": 1,
+            "url": "https://www.luogu.com.cn/problem/T625027?contestId=254710"
+        },
+        {
+            "cases": [
+                {
+                    "expected": "1\n2\n3\n4\n5\n8\n",
+                    "expected_output_filename": "",
+                    "input": "6\n1\n2\n3\n4\n5\n6\n",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "",
+            "memory_limit": 512,
+            "memory_limit_unit": 1,
+            "name": "T625017 [KenOI 2025] 异或题",
+            "time_limit": 1000,
+            "time_limit_unit": 1,
+            "url": "https://www.luogu.com.cn/problem/T625017?contestId=254710"
+        },
+        {
+            "cases": [
+                {
+                    "expected": "2\n",
+                    "expected_output_filename": "",
+                    "input": "5 2\n1 2 3 4 5\n",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "",
+            "memory_limit": 512,
+            "memory_limit_unit": 1,
+            "name": "T625018 [KenOI 2025] 序列题",
+            "time_limit": 1000,
+            "time_limit_unit": 1,
+            "url": "https://www.luogu.com.cn/problem/T625018?contestId=254710"
+        },
+        {
+            "cases": [
+                {
+                    "expected": "48\n",
+                    "expected_output_filename": "",
+                    "input": "7 5\n2 1\n3 2\n4 2\n5 3\n6 5\n7 3\n",
+                    "input_filename": "",
+                    "name": "试题案例1"
+                }
+            ],
+            "description": "",
+            "memory_limit": 512,
+            "memory_limit_unit": 1,
+            "name": "T637331 [KenOI 2025] 游走题",
+            "time_limit": 1000,
+            "time_limit_unit": 1,
+            "url": "https://www.luogu.com.cn/problem/T637331?contestId=254710"
+        }
+    ]
+}
