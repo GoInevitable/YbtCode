@@ -17,91 +17,6 @@ using socklen_t = int;
 #endif
 
 using namespace std;
-
-// Cross-platform popen wrapper: use _popen on Windows
-static string run_command_capture(const string &cmd) {
-	string out;
-#if defined(_WIN32) || defined(_WIN64)
-	FILE *f = _popen(cmd.c_str(), "r");
-#else
-	FILE *f = popen(cmd.c_str(), "r");
-#endif
-	if (!f) return out;
-	char buf[512];
-	while (fgets(buf, sizeof(buf), f)) out += buf;
-#if defined(_WIN32) || defined(_WIN64)
-	_pclose(f);
-#else
-	pclose(f);
-#endif
-	return out;
-}
-
-// Parse ping output for an average RTT in ms; return -1 on failure.
-static double parse_ping_avg_ms(const string &out) {
-	// POSIX: look for "rtt min/avg/max/mdev = X/Y/Z/W ms"
-	size_t p = out.find("rtt min/avg/max");
-	if (p != string::npos) {
-		size_t eq = out.find('=', p);
-		if (eq!=string::npos) {
-			string tail = out.substr(eq+1);
-			// extract second number
-			vector<string> parts; string cur;
-			for(char c: tail){ if((c>='0'&&c<='9')||c=='.') cur+=c; else { if(!cur.empty()){ parts.push_back(cur); cur.clear(); } if(parts.size()>=2) break; } }
-			if(parts.size()>=2) return stod(parts[1]);
-		}
-	}
-	// Windows: look for "Average = Xms"
-	p = out.find("Average =");
-	if (p!=string::npos) {
-		size_t s = out.find("=", p);
-		if (s!=string::npos) {
-			size_t mspos = out.find("ms", s);
-			string num = out.substr(s+1, mspos - (s+1));
-			// trim
-			auto trim = [](string &t){ size_t a=0; while(a<t.size() && isspace((unsigned char)t[a])) a++; size_t b=t.size(); while(b> a && isspace((unsigned char)t[b-1])) b--; t = t.substr(a,b-a); };
-			trim(num);
-			try { return stod(num); } catch(...){}
-		}
-	}
-	return -1.0;
-}
-
-// Run ping and return average RTT (ms), or -1 on failure.
-static double run_ping_avg(const string &ip, int count=3) {
-#if defined(_WIN32) || defined(_WIN64)
-	string cmd = "ping -n " + to_string(count) + " " + ip;
-#else
-	string cmd = "ping -c " + to_string(count) + " " + ip;
-#endif
-	string out = run_command_capture(cmd);
-	return parse_ping_avg_ms(out);
-}
-
-// Run traceroute (or tracert) and return hop count (or -1 on failure).
-static int run_traceroute_hops(const string &ip) {
-#if defined(_WIN32) || defined(_WIN64)
-	string cmd = "tracert -d -h 30 " + ip;
-	string out = run_command_capture(cmd);
-	// count lines starting with a number
-	int hops = 0; istringstream is(out); string line; while(getline(is,line)){ if(line.empty()) continue; if(isdigit((unsigned char)line[0])) hops++; }
-	return hops>0? hops: -1;
-#else
-	// prefer mtr if available else traceroute
-	string which = run_command_capture("which mtr || true");
-	if (!which.empty()) {
-		string cmd = "mtr -r -c 5 " + ip;
-		string out = run_command_capture(cmd);
-		int hops = 0; istringstream is(out); string line; while(getline(is,line)){ if(line.empty()) continue; hops++; }
-		return hops>0? hops: -1;
-	} else {
-		string cmd = "traceroute -n " + ip;
-		string out = run_command_capture(cmd);
-		int hops = 0; istringstream is(out); string line; while(getline(is,line)){ if(line.empty()) continue; if(isdigit((unsigned char)line[0])) hops++; }
-		return hops>0? hops: -1;
-	}
-#endif
-}
 /*
  * dnstool.cpp
  * ----------------
@@ -361,7 +276,6 @@ int main(int argc, char** argv) {
 	vector<string> servers = {"8.8.8.8","1.1.1.1","9.9.9.9","114.114.114.114","223.5.5.5"};
 	vector<string> domains = {"www.example.com","www.360.cn","github.com"};
 	bool include_ipv6 = false;
-	bool enable_diag = false; // network diagnostics (ping/traceroute)
 
 	// simple arg parsing: command line flags override defaults and saved config
 	for(int i=1;i<argc;++i){
@@ -376,8 +290,7 @@ int main(int argc, char** argv) {
 			domains.clear(); string s=argv[++i]; size_t p=0; while(p<s.size()){ size_t q=s.find(',',p); if(q==string::npos) q=s.size(); domains.push_back(s.substr(p,q-p)); p=q+1; }
 		}
 		else if(a=="-6") { include_ipv6 = true; }
-		else if(a=="--diag") { enable_diag = true; }
-		else if(a=="-h" || a=="--help"){ cout<<"Usage: dnstool [-d domain] [-n probes] [-t timeout_ms] [-s ip,ip,...] [-6] [--diag] [ip...](servers)\n"; cleanup_sockets(); return 0; }
+		else if(a=="-h" || a=="--help"){ cout<<"Usage: dnstool [-d domain] [-n probes] [-t timeout_ms] [-s ip,ip,...] [-6] [ip...](servers)\n"; cleanup_sockets(); return 0; }
 		else { servers.clear(); // remaining args are server IPs
 			for(int j=i;j<argc;++j) servers.push_back(string(argv[j])); break; }
 	}
@@ -605,9 +518,7 @@ int main(int argc, char** argv) {
 
 	// Entry collects per (server,host) results including returned IPs and
 	// per-IP reachability.
-	// Entry collects per (server,host) results including returned IPs,
-	// per-IP reachability and brief diagnostics (ping avg, hops).
-	struct Entry { string server, host; double loss, min_ms, avg_ms, max_ms; vector<string> ips; int reachable; int total_ips; unordered_map<string,bool> ip_reachable; unordered_map<string,string> ip_diag; };
+	struct Entry { string server, host; double loss, min_ms, avg_ms, max_ms; vector<string> ips; int reachable; int total_ips; unordered_map<string,bool> ip_reachable; };
 	vector<Entry> entries;
 
 	// (Removed HTTP page check — no browser-open detection per user request)
@@ -633,23 +544,17 @@ int main(int argc, char** argv) {
 			Entry e; e.server = sv; e.host = host; e.loss = loss; e.min_ms = (st.recv? st.min_ms:0.0); e.avg_ms = avg; e.max_ms = (st.recv? st.max_ms:0.0);
 			for(auto &ip: all_ips) e.ips.push_back(ip);
 			e.reachable = 0; e.total_ips = 0; e.ip_reachable.clear();
+			
+			// Test IPv4-only addresses for TCP reachability (port 80)
 			for(auto &ip: e.ips){
-				if (ip.find(':')!=string::npos) continue; // skip ipv6 for now
+				if (ip.find(':')!=string::npos) continue; // skip ipv6
 				++e.total_ips;
 				bool r = tcp_connect_timeout(ip, 80, 800);
 				if (r) ++e.reachable;
 				e.ip_reachable[ip] = r;
-				// run optional network diagnostics for each returned IPv4 (only if --diag flag set)
-				if (enable_diag) {
-					double pingavg = run_ping_avg(ip, 3);
-					int hops = run_traceroute_hops(ip);
-					ostringstream ss;
-					ss << "ping_avg_ms=" << (pingavg>0? to_string((int)round(pingavg)) : string("-")) << ";hops=" << (hops>0? to_string(hops): string("-"));
-					e.ip_diag[ip] = ss.str();
-				}
 			}
+			
 			entries.push_back(move(e));
-			// log detail for this query will be emitted later with OUT lines
 		}
 	}
 
@@ -675,7 +580,7 @@ int main(int argc, char** argv) {
 		if (logf) {
 			logf << "OUT server=" << e.server << " host=" << e.host << " loss=" << e.loss << " ips=" << (iplist.empty()?"-":iplist)
 				 << " reachable=" << e.reachable << "\n";
-			for(auto &ip: e.ips){ logf << "  ip=" << ip << " reachable=" << (e.ip_reachable.count(ip)? (e.ip_reachable[ip]?"yes":"no") : "-") << " diag=" << (e.ip_diag.count(ip)? e.ip_diag[ip] : "-") << "\n"; }
+			for(auto &ip: e.ips){ logf << "  ip=" << ip << " reachable=" << (e.ip_reachable.count(ip)? (e.ip_reachable[ip]?"yes":"no") : "-") << "\n"; }
 		}
 	}
 
