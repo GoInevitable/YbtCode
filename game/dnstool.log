@@ -1,0 +1,284 @@
+==== dnstool run: 2026-01-25 09:06:09 ====
+server=202.102.134.68 host=www.example.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=202.102.134.68 host=www.360.cn loss=0.0 min=7.5 avg=7.5 max=7.5
+  ip=101.199.254.116 reachable=yes page=no
+  ip=123.6.48.25 reachable=yes page=no
+server=202.102.134.68 host=github.com loss=0.0 min=5.7 avg=5.7 max=5.7
+  ip=20.205.243.166 reachable=yes page=no
+server=202.102.154.3 host=www.example.com loss=0.0 min=7.7 avg=7.7 max=7.7
+  ip=104.18.26.120 reachable=yes page=no
+  ip=104.18.27.120 reachable=yes page=no
+server=202.102.154.3 host=www.360.cn loss=100.0 min=0.0 avg=0.0 max=0.0
+server=202.102.154.3 host=github.com loss=0.0 min=6.7 avg=6.7 max=6.7
+  ip=20.205.243.166 reachable=yes page=no
+server=8.8.8.8 host=www.example.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=8.8.8.8 host=www.360.cn loss=100.0 min=0.0 avg=0.0 max=0.0
+server=8.8.8.8 host=github.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=1.1.1.1 host=www.example.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=1.1.1.1 host=www.360.cn loss=100.0 min=0.0 avg=0.0 max=0.0
+server=1.1.1.1 host=github.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=9.9.9.9 host=www.example.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=9.9.9.9 host=www.360.cn loss=100.0 min=0.0 avg=0.0 max=0.0
+server=9.9.9.9 host=github.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=114.114.114.114 host=www.example.com loss=0.0 min=9.2 avg=9.2 max=9.2
+  ip=104.18.26.120 reachable=yes page=no
+  ip=104.18.27.120 reachable=yes page=no
+server=114.114.114.114 host=www.360.cn loss=0.0 min=8.3 avg=8.3 max=8.3
+  ip=101.199.254.116 reachable=yes page=no
+  ip=123.6.48.25 reachable=yes page=no
+server=114.114.114.114 host=github.com loss=0.0 min=8.3 avg=8.3 max=8.3
+  ip=20.205.243.166 reachable=yes page=no
+server=223.5.5.5 host=www.example.com loss=0.0 min=8.5 avg=8.5 max=8.5
+  ip=104.18.26.120 reachable=yes page=no
+  ip=104.18.27.120 reachable=yes page=no
+server=223.5.5.5 host=www.360.cn loss=0.0 min=13.5 avg=13.5 max=13.5
+  ip=101.199.254.116 reachable=yes page=no
+  ip=123.6.48.25 reachable=yes page=no
+server=223.5.5.5 host=github.com loss=0.0 min=9.6 avg=9.6 max=9.6
+  ip=20.205.243.166 reachable=yes page=no
+Hidden servers: 1.1.1.1 9.9.9.9 8.8.8.8
+==== end run ====
+==== dnstool run: 2026-01-25 09:10:01 ====
+server=202.102.134.68 host=www.example.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=202.102.134.68 host=www.360.cn loss=0.0 min=7.3 avg=7.3 max=7.3
+  ip=101.199.254.116 reachable=yes page=no
+  ip=123.6.48.25 reachable=yes page=no
+server=202.102.134.68 host=github.com loss=0.0 min=7.6 avg=7.6 max=7.6
+  ip=20.205.243.166 reachable=yes page=no
+server=202.102.154.3 host=www.example.com loss=0.0 min=6.7 avg=6.7 max=6.7
+  ip=104.18.26.120 reachable=yes page=no
+  ip=104.18.27.120 reachable=yes page=no
+server=202.102.154.3 host=www.360.cn loss=100.0 min=0.0 avg=0.0 max=0.0
+server=202.102.154.3 host=github.com loss=0.0 min=7.4 avg=7.4 max=7.4
+  ip=20.205.243.166 reachable=yes page=no
+server=8.8.8.8 host=www.example.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=8.8.8.8 host=www.360.cn loss=100.0 min=0.0 avg=0.0 max=0.0
+server=8.8.8.8 host=github.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=1.1.1.1 host=www.example.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=1.1.1.1 host=www.360.cn loss=100.0 min=0.0 avg=0.0 max=0.0
+server=1.1.1.1 host=github.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=9.9.9.9 host=www.example.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=9.9.9.9 host=www.360.cn loss=100.0 min=0.0 avg=0.0 max=0.0
+server=9.9.9.9 host=github.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=114.114.114.114 host=www.example.com loss=0.0 min=7.1 avg=7.1 max=7.1
+  ip=104.18.26.120 reachable=yes page=no
+  ip=104.18.27.120 reachable=yes page=no
+server=114.114.114.114 host=www.360.cn loss=0.0 min=7.2 avg=7.2 max=7.2
+  ip=101.199.254.116 reachable=yes page=no
+  ip=123.6.48.25 reachable=yes page=no
+server=114.114.114.114 host=github.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=223.5.5.5 host=www.example.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=223.5.5.5 host=www.360.cn loss=0.0 min=12.9 avg=12.9 max=12.9
+  ip=101.199.254.116 reachable=yes page=no
+  ip=123.6.48.25 reachable=yes page=no
+server=223.5.5.5 host=github.com loss=0.0 min=10.9 avg=10.9 max=10.9
+  ip=20.205.243.166 reachable=yes page=no
+OUT server=202.102.134.68 host=www.example.com loss=100.0 ips=- reachable=0 page_ok=0
+OUT server=202.102.134.68 host=www.360.cn loss=0.0 ips=101.199.254.116,123.6.48.25 reachable=2 page_ok=0
+OUT server=202.102.134.68 host=github.com loss=0.0 ips=20.205.243.166 reachable=1 page_ok=0
+OUT server=202.102.154.3 host=www.example.com loss=0.0 ips=104.18.26.120,104.18.27.120 reachable=2 page_ok=0
+OUT server=202.102.154.3 host=www.360.cn loss=100.0 ips=- reachable=0 page_ok=0
+OUT server=202.102.154.3 host=github.com loss=0.0 ips=20.205.243.166 reachable=1 page_ok=0
+OUT server=114.114.114.114 host=www.example.com loss=0.0 ips=104.18.26.120,104.18.27.120 reachable=2 page_ok=0
+OUT server=114.114.114.114 host=www.360.cn loss=0.0 ips=101.199.254.116,123.6.48.25 reachable=2 page_ok=0
+OUT server=114.114.114.114 host=github.com loss=100.0 ips=- reachable=0 page_ok=0
+OUT server=223.5.5.5 host=www.example.com loss=100.0 ips=- reachable=0 page_ok=0
+OUT server=223.5.5.5 host=www.360.cn loss=0.0 ips=101.199.254.116,123.6.48.25 reachable=2 page_ok=0
+OUT server=223.5.5.5 host=github.com loss=0.0 ips=20.205.243.166 reachable=1 page_ok=0
+Hidden servers: 1.1.1.1 9.9.9.9 8.8.8.8
+==== end run ====
+Summary: visible_servers=4 hidden=3 unique_ips=5 reachable=13 tot_ips=13 page_ok=0 page_total=13 avg_loss=33.3
+==== dnstool run: 2026-01-25 09:10:41 ====
+server=202.102.134.68 host=www.example.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=202.102.134.68 host=www.360.cn loss=0.0 min=7.6 avg=7.6 max=7.6
+  ip=101.199.254.116 reachable=yes page=no
+  ip=123.6.48.25 reachable=yes page=no
+server=202.102.134.68 host=github.com loss=0.0 min=6.4 avg=6.4 max=6.4
+  ip=20.205.243.166 reachable=yes page=no
+server=202.102.154.3 host=www.example.com loss=0.0 min=7.7 avg=7.7 max=7.7
+  ip=104.18.26.120 reachable=yes page=no
+  ip=104.18.27.120 reachable=yes page=no
+server=202.102.154.3 host=www.360.cn loss=0.0 min=6.2 avg=6.2 max=6.2
+  ip=101.199.254.116 reachable=yes page=no
+  ip=123.6.48.25 reachable=yes page=no
+server=202.102.154.3 host=github.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=8.8.8.8 host=www.example.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=8.8.8.8 host=www.360.cn loss=100.0 min=0.0 avg=0.0 max=0.0
+server=8.8.8.8 host=github.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=1.1.1.1 host=www.example.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=1.1.1.1 host=www.360.cn loss=100.0 min=0.0 avg=0.0 max=0.0
+server=1.1.1.1 host=github.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=9.9.9.9 host=www.example.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=9.9.9.9 host=www.360.cn loss=100.0 min=0.0 avg=0.0 max=0.0
+server=9.9.9.9 host=github.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=114.114.114.114 host=www.example.com loss=0.0 min=10.9 avg=10.9 max=10.9
+  ip=104.18.26.120 reachable=yes page=no
+  ip=104.18.27.120 reachable=yes page=no
+server=114.114.114.114 host=www.360.cn loss=100.0 min=0.0 avg=0.0 max=0.0
+server=114.114.114.114 host=github.com loss=100.0 min=0.0 avg=0.0 max=0.0
+server=223.5.5.5 host=www.example.com loss=0.0 min=6.5 avg=6.5 max=6.5
+  ip=104.18.26.120 reachable=yes page=no
+  ip=104.18.27.120 reachable=yes page=no
+server=223.5.5.5 host=www.360.cn loss=100.0 min=0.0 avg=0.0 max=0.0
+server=223.5.5.5 host=github.com loss=100.0 min=0.0 avg=0.0 max=0.0
+OUT server=202.102.134.68 host=www.example.com loss=100.0 ips=- reachable=0 page_ok=0
+OUT server=202.102.134.68 host=www.360.cn loss=0.0 ips=101.199.254.116,123.6.48.25 reachable=2 page_ok=0
+OUT server=202.102.134.68 host=github.com loss=0.0 ips=20.205.243.166 reachable=1 page_ok=0
+OUT server=202.102.154.3 host=www.example.com loss=0.0 ips=104.18.26.120,104.18.27.120 reachable=2 page_ok=0
+OUT server=202.102.154.3 host=www.360.cn loss=0.0 ips=101.199.254.116,123.6.48.25 reachable=2 page_ok=0
+OUT server=202.102.154.3 host=github.com loss=100.0 ips=- reachable=0 page_ok=0
+OUT server=114.114.114.114 host=www.example.com loss=0.0 ips=104.18.26.120,104.18.27.120 reachable=2 page_ok=0
+OUT server=114.114.114.114 host=www.360.cn loss=100.0 ips=- reachable=0 page_ok=0
+OUT server=114.114.114.114 host=github.com loss=100.0 ips=- reachable=0 page_ok=0
+OUT server=223.5.5.5 host=www.example.com loss=0.0 ips=104.18.26.120,104.18.27.120 reachable=2 page_ok=0
+OUT server=223.5.5.5 host=www.360.cn loss=100.0 ips=- reachable=0 page_ok=0
+OUT server=223.5.5.5 host=github.com loss=100.0 ips=- reachable=0 page_ok=0
+Hidden servers: 1.1.1.1 9.9.9.9 8.8.8.8
+==== end run ====
+Summary: visible_servers=4 hidden=3 unique_ips=5 reachable=11 tot_ips=11 page_ok=0 page_total=11 avg_loss=50.0
+==== dnstool run: 2026-01-25 09:17:09 ====
+OUT server=202.102.134.68 host=www.example.com loss=0 ips=104.18.26.120,104.18.27.120 reachable=2
+  ip=104.18.26.120 reachable=yes
+  ip=104.18.27.120 reachable=yes
+OUT server=202.102.134.68 host=www.360.cn loss=0 ips=101.199.254.116,123.6.48.25 reachable=2
+  ip=101.199.254.116 reachable=yes
+  ip=123.6.48.25 reachable=yes
+OUT server=202.102.134.68 host=github.com loss=0 ips=20.205.243.166 reachable=1
+  ip=20.205.243.166 reachable=yes
+OUT server=202.102.154.3 host=www.example.com loss=0 ips=104.18.26.120,104.18.27.120 reachable=2
+  ip=104.18.26.120 reachable=yes
+  ip=104.18.27.120 reachable=yes
+OUT server=202.102.154.3 host=www.360.cn loss=100 ips=- reachable=0
+OUT server=202.102.154.3 host=github.com loss=0 ips=20.205.243.166 reachable=1
+  ip=20.205.243.166 reachable=yes
+OUT server=114.114.114.114 host=www.example.com loss=0 ips=104.18.26.120,104.18.27.120 reachable=2
+  ip=104.18.26.120 reachable=yes
+  ip=104.18.27.120 reachable=yes
+OUT server=114.114.114.114 host=www.360.cn loss=0 ips=101.199.254.116,123.6.48.25 reachable=2
+  ip=101.199.254.116 reachable=yes
+  ip=123.6.48.25 reachable=yes
+OUT server=114.114.114.114 host=github.com loss=100 ips=- reachable=0
+Hidden servers: 223.5.5.5 1.1.1.1 9.9.9.9 8.8.8.8
+==== end run ====
+Summary: visible_servers=3 hidden=4 unique_ips=5 reachable=12 tot_ips=12 avg_loss=22.2222
+==== dnstool run: 2026-01-25 09:17:39 ====
+OUT server=202.102.134.68 host=www.example.com loss=100 ips=- reachable=0
+OUT server=202.102.134.68 host=www.360.cn loss=0 ips=101.199.254.116,123.6.48.25 reachable=2
+  ip=101.199.254.116 reachable=yes
+  ip=123.6.48.25 reachable=yes
+OUT server=202.102.134.68 host=github.com loss=0 ips=20.205.243.166 reachable=1
+  ip=20.205.243.166 reachable=yes
+OUT server=202.102.154.3 host=www.example.com loss=0 ips=104.18.26.120,104.18.27.120 reachable=2
+  ip=104.18.26.120 reachable=yes
+  ip=104.18.27.120 reachable=yes
+OUT server=202.102.154.3 host=www.360.cn loss=0 ips=101.199.254.116,123.6.48.25 reachable=2
+  ip=101.199.254.116 reachable=yes
+  ip=123.6.48.25 reachable=yes
+OUT server=202.102.154.3 host=github.com loss=0 ips=20.205.243.166 reachable=1
+  ip=20.205.243.166 reachable=yes
+OUT server=114.114.114.114 host=www.example.com loss=0 ips=104.18.26.120,104.18.27.120 reachable=2
+  ip=104.18.26.120 reachable=yes
+  ip=104.18.27.120 reachable=yes
+OUT server=114.114.114.114 host=www.360.cn loss=100 ips=- reachable=0
+OUT server=114.114.114.114 host=github.com loss=0 ips=20.205.243.166 reachable=1
+  ip=20.205.243.166 reachable=yes
+OUT server=223.5.5.5 host=www.example.com loss=100 ips=- reachable=0
+OUT server=223.5.5.5 host=www.360.cn loss=0 ips=101.199.254.116,123.6.48.25 reachable=2
+  ip=101.199.254.116 reachable=yes
+  ip=123.6.48.25 reachable=yes
+OUT server=223.5.5.5 host=github.com loss=0 ips=20.205.243.166 reachable=1
+  ip=20.205.243.166 reachable=yes
+Hidden servers: 1.1.1.1 9.9.9.9 8.8.8.8
+==== end run ====
+Summary: visible_servers=4 hidden=3 unique_ips=5 reachable=14 tot_ips=14 avg_loss=25
+==== dnstool run: 2026-01-25 09:27:31 ====
+OUT server=202.102.134.68 host=www.example.com loss=33.3333 ips=104.18.26.120,104.18.27.120 reachable=2
+  ip=104.18.26.120 reachable=yes
+  ip=104.18.27.120 reachable=yes
+OUT server=202.102.134.68 host=github.com loss=0 ips=20.205.243.166 reachable=1
+  ip=20.205.243.166 reachable=yes
+OUT server=202.102.154.3 host=www.example.com loss=33.3333 ips=104.18.26.120,104.18.27.120 reachable=2
+  ip=104.18.26.120 reachable=yes
+  ip=104.18.27.120 reachable=yes
+OUT server=202.102.154.3 host=github.com loss=0 ips=20.205.243.166 reachable=1
+  ip=20.205.243.166 reachable=yes
+Hidden servers: 1.1.1.1 8.8.8.8
+==== end run ====
+Summary: visible_servers=2 hidden=2 unique_ips=3 reachable=6 tot_ips=6 avg_loss=16.6667
+==== dnstool run: 2026-01-25 09:44:07 ====
+OUT server=202.102.134.68 host=www.example.com loss=33.3333 ips=104.18.26.120,104.18.27.120 reachable=2
+  ip=104.18.26.120 reachable=yes
+  ip=104.18.27.120 reachable=yes
+OUT server=202.102.134.68 host=www.360.cn loss=33.3333 ips=101.199.254.116,123.6.48.25 reachable=2
+  ip=101.199.254.116 reachable=yes
+  ip=123.6.48.25 reachable=yes
+OUT server=202.102.134.68 host=github.com loss=0 ips=20.205.243.166 reachable=1
+  ip=20.205.243.166 reachable=yes
+OUT server=202.102.154.3 host=www.example.com loss=0 ips=104.18.26.120,104.18.27.120 reachable=2
+  ip=104.18.26.120 reachable=yes
+  ip=104.18.27.120 reachable=yes
+OUT server=202.102.154.3 host=www.360.cn loss=33.3333 ips=101.199.254.116,123.6.48.25 reachable=2
+  ip=101.199.254.116 reachable=yes
+  ip=123.6.48.25 reachable=yes
+OUT server=202.102.154.3 host=github.com loss=0 ips=20.205.243.166 reachable=1
+  ip=20.205.243.166 reachable=yes
+OUT server=114.114.114.114 host=www.example.com loss=0 ips=104.18.26.120,104.18.27.120 reachable=2
+  ip=104.18.26.120 reachable=yes
+  ip=104.18.27.120 reachable=yes
+OUT server=114.114.114.114 host=www.360.cn loss=33.3333 ips=101.199.254.116,123.6.48.25 reachable=2
+  ip=101.199.254.116 reachable=yes
+  ip=123.6.48.25 reachable=yes
+OUT server=114.114.114.114 host=github.com loss=33.3333 ips=20.205.243.166 reachable=1
+  ip=20.205.243.166 reachable=yes
+OUT server=223.5.5.5 host=www.example.com loss=0 ips=104.18.26.120,104.18.27.120 reachable=2
+  ip=104.18.26.120 reachable=yes
+  ip=104.18.27.120 reachable=yes
+OUT server=223.5.5.5 host=www.360.cn loss=66.6667 ips=101.199.254.116,123.6.48.25 reachable=2
+  ip=101.199.254.116 reachable=yes
+  ip=123.6.48.25 reachable=yes
+OUT server=223.5.5.5 host=github.com loss=66.6667 ips=20.205.243.166 reachable=1
+  ip=20.205.243.166 reachable=yes
+Hidden servers: 1.1.1.1 9.9.9.9 8.8.8.8
+==== end run ====
+Summary: visible_servers=4 hidden=3 unique_ips=5 reachable=20 tot_ips=20 avg_loss=25
+==== dnstool run: 2026-01-25 10:18:05 ====
+OUT server=202.102.134.68 host=www.example.com loss=0 ips=104.18.26.120,104.18.27.120 reachable=2
+  ip=104.18.26.120 reachable=yes
+  ip=104.18.27.120 reachable=yes
+OUT server=202.102.154.3 host=www.example.com loss=0 ips=104.18.26.120,104.18.27.120 reachable=2
+  ip=104.18.26.120 reachable=yes
+  ip=104.18.27.120 reachable=yes
+Hidden servers: 8.8.8.8
+==== end run ====
+Summary: visible_servers=2 hidden=1 unique_ips=2 reachable=4 tot_ips=4 avg_loss=0
+==== dnstool run: 2026-01-25 10:18:27 ====
+OUT server=202.102.134.68 host=github.com loss=33.3333 ips=20.205.243.166 reachable=1
+  ip=20.205.243.166 reachable=yes
+OUT server=202.102.134.68 host=baidu.com loss=0 ips=110.242.74.102,111.63.65.103,111.63.65.247,124.237.177.164 reachable=4
+  ip=110.242.74.102 reachable=yes
+  ip=111.63.65.103 reachable=yes
+  ip=111.63.65.247 reachable=yes
+  ip=124.237.177.164 reachable=yes
+OUT server=202.102.154.3 host=github.com loss=0 ips=20.205.243.166 reachable=1
+  ip=20.205.243.166 reachable=yes
+OUT server=202.102.154.3 host=baidu.com loss=33.3333 ips=110.242.74.102,111.63.65.103,111.63.65.247,124.237.177.164 reachable=4
+  ip=110.242.74.102 reachable=yes
+  ip=111.63.65.103 reachable=yes
+  ip=111.63.65.247 reachable=yes
+  ip=124.237.177.164 reachable=yes
+Hidden servers: 1.1.1.1 8.8.8.8
+==== end run ====
+Summary: visible_servers=2 hidden=2 unique_ips=5 reachable=10 tot_ips=10 avg_loss=16.6667
+==== dnstool run: 2026-01-25 10:18:40 ====
+OUT server=202.102.134.68 host=example.com loss=0 ips=104.18.26.120,104.18.27.120 reachable=2
+  ip=104.18.26.120 reachable=yes
+  ip=104.18.27.120 reachable=yes
+OUT server=202.102.154.3 host=example.com loss=0 ips=104.18.26.120,104.18.27.120 reachable=2
+  ip=104.18.26.120 reachable=yes
+  ip=104.18.27.120 reachable=yes
+OUT server=8.8.8.8 host=example.com loss=0 ips=104.18.26.120,104.18.27.120 reachable=2
+  ip=104.18.26.120 reachable=yes
+  ip=104.18.27.120 reachable=yes
+Hidden servers: fec0:0:0:ffff::3 fec0:0:0:ffff::2 fec0:0:0:ffff::1
+==== end run ====
+Summary: visible_servers=3 hidden=3 unique_ips=2 reachable=6 tot_ips=6 avg_loss=0
